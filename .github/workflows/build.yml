@@ -1,0 +1,56 @@
+name: Build APK
+
+# اجرای دستی از تب Actions، یا با ساخت تگ مثل v2.0.0
+permissions:
+  contents: write
+
+on:
+  workflow_dispatch:
+  push:
+    tags: ["v*"]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      # ران‌ر ubuntu-latest از قبل Android SDK دارد؛ اکشن setup-android با cmdline-tools جدید خطا می‌دهد
+      - name: Accept Android licenses
+        run: yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --licenses > /dev/null || true
+
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: 8.10.2
+
+      # ساخت خودکار keystore برای امضای APK
+      - name: Create keystore
+        run: |
+          keytool -genkeypair -keystore "$RUNNER_TEMP/release.jks" -alias smsforwarder -keyalg RSA -keysize 2048 -validity 10000 -storepass android123 -keypass android123 -dname "CN=SmsForwarder"
+          echo "KEYSTORE_PATH=$RUNNER_TEMP/release.jks" >> "$GITHUB_ENV"
+          echo "KEYSTORE_PASSWORD=android123" >> "$GITHUB_ENV"
+          echo "KEY_ALIAS=smsforwarder" >> "$GITHUB_ENV"
+          echo "KEY_PASSWORD=android123" >> "$GITHUB_ENV"
+
+      - name: Build release APK and AAB
+        run: gradle assembleRelease bundleRelease
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: SmsForwarder-release
+          path: |
+            app/build/outputs/apk/release/*.apk
+            app/build/outputs/bundle/release/*.aab
+
+      # با ساخت تگ (مثل v2.3.0) APK در صفحه‌ی Releases هم منتشر می‌شود؛ لینک دانلود صفحه‌ی آپدیت همین‌جاست
+      - name: Publish release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: app/build/outputs/apk/release/*.apk
