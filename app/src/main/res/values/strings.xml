@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">انتقال پیامک</string>
+
+    <!-- منو -->
+    <string name="ok">تأیید</string>
+    <string name="cancel">انصراف</string>
+
+    <!-- وضعیت -->
+    <string name="status_title">ارسال خودکار</string>
+    <string name="status_off">غیرفعال</string>
+
+    <!-- شماره مقصد -->
+
+    <!-- فیلترها -->
+    <string name="label_recv_sim">سیم‌کارت دریافت‌کننده</string>
+    <string name="chip_all_sims">هر دو سیم</string>
+    <string name="chip_sim1">سیم ۱</string>
+    <string name="chip_sim2">سیم ۲</string>
+    <string name="label_sender">فرستنده</string>
+    <string name="chip_all_senders">همه</string>
+    <string name="chip_listed_senders">فقط فرستنده‌های مشخص</string>
+    <string name="hint_filter_list">لیست فرستنده‌ها</string>
+    <string name="helper_filter_list">شماره یا نام فرستنده (مثل DigiKala)؛ تایپ کنید تا پیشنهاد بیاید، یا از دکمه‌های زیر انتخاب کنید. با ویرگول یا خط جدید جدا کنید.</string>
+
+    <!-- قالب -->
+    <string name="section_template">قالب پیام</string>
+    <string name="hint_template">متن پیامِ ارسالی</string>
+    <string name="label_vars">درج متغیر</string>
+    <string name="var_sender">فرستنده</string>
+    <string name="var_body">متن پیام</string>
+    <string name="var_sim">سیم</string>
+    <string name="var_time">ساعت</string>
+    <string name="var_date">تاریخ</string>
+    <string name="label_preview">پیش‌نمایش</string>
+    <string name="preview_meta">%1$d نویسه · %2$d پیامک</string>
+    <string name="template_note">متن فارسی در هر بخش پیامک حدود ۷۰ نویسه جا می‌شود و هر بخش هزینه‌ی یک پیامک دارد.</string>
+    <string name="btn_reset_template">بازگشت به پیش‌فرض</string>
+    <string name="btn_test_send">ارسال آزمایشی</string>
+    <string name="test_done">ارسال آزمایشی انجام شد؛ نتیجه در گزارش ثبت می‌شود.</string>
+    <string name="test_body">کد تأیید شما: 482913</string>
+    <string name="test_sender">10008888</string>
+
+    <!-- سیم ارسال -->
+    <string name="section_send_sim">ارسال از طریق</string>
+    <string name="chip_send_same">همان سیم دریافت</string>
+
+    <!-- باتری -->
+    <string name="battery_title">پایداری در پس‌زمینه</string>
+    <string name="battery_text">برای اینکه سیستم برنامه را متوقف نکند، آن را از بهینه‌سازی باتری مستثنی کنید. در برخی گوشی‌ها (شیائومی، سامسونگ، هوآوی) باید اجازه‌ی اجرا در پس‌زمینه را هم بدهید.</string>
+    <string name="battery_action">باز کردن تنظیمات</string>
+
+    <!-- گزارش -->
+    <string name="log_title">گزارش ارسال‌ها</string>
+    <string name="log_empty">هنوز پیامی منتقل نشده است.</string>
+    <string name="log_last">آخرین: %1$s · %2$s</string>
+    <string name="log_clear">پاک کردن گزارش</string>
+    <string name="log_clear_confirm">همه‌ی موارد گزارش پاک شود؟</string>
+    <string name="log_test">ارسال آزمایشی</string>
+    <string name="log_privacy_note">برای حفظ حریم خصوصی، متن پیام‌ها در گزارش ذخیره نمی‌شود.</string>
+    <string name="sim_unknown">نامشخص</string>
+
+    <string name="err_generic">خطای عمومی در ارسال</string>
+    <string name="err_radio_off">آنتن خاموش است (حالت پرواز؟)</string>
+    <string name="err_null_pdu">پیام نامعتبر است</string>
+    <string name="err_no_service">سیم‌کارت آنتن ندارد</string>
+    <string name="err_code">خطا با کد %1$d</string>
+
+
+    <!-- دسترسی‌ها -->
+    <string name="perm_title">دسترسی‌های لازم</string>
+    <string name="perm_message">برای انتقال پیامک، برنامه به این دسترسی‌ها نیاز دارد:\n\n• دریافت پیامک: تا بفهمد پیام جدیدی رسیده است.\n• ارسال پیامک: تا پیام را به شماره‌ی مقصد بفرستد (ممکن است هزینه‌ی سیم‌کارت داشته باشد).\n• وضعیت تلفن: تا بتواند سیم ۱ و سیم ۲ را از هم تشخیص دهد.\n\nمتن پیام‌ها فقط به همان شماره‌ای که خودتان تعیین کرده‌اید ارسال می‌شود.</string>
+    <string name="perm_continue">ادامه</string>
+    <string name="perm_denied">بدون این دسترسی‌ها ارسال خودکار ممکن نیست.</string>
+    <string name="perm_settings_title">دسترسی داده نشد</string>
+    <string name="perm_settings_msg">برای فعال‌سازی، دسترسی «پیامک» را از تنظیمات برنامه روشن کنید.</string>
+    <string name="open_settings">باز کردن تنظیمات</string>
+    <string name="perm_revoked">دسترسی‌ها لغو شده بود؛ ارسال خودکار غیرفعال شد.</string>
+
+    <!-- انتخاب از مخاطبین و پیامک‌ها -->
+    <string name="btn_pick_contacts">از مخاطبین</string>
+    <string name="btn_pick_sms">از پیامک‌ها</string>
+    <string name="picker_title_target">انتخاب شماره‌ی مقصد</string>
+    <string name="picker_title_filter">انتخاب فرستنده‌ها</string>
+    <string name="picker_search">جستجو یا تایپ دستی</string>
+    <string name="tab_contacts">مخاطبین</string>
+    <string name="tab_sms">پیامک‌ها</string>
+    <string name="picker_loading">در حال بارگذاری…</string>
+    <string name="picker_empty_contacts">مخاطبی پیدا نشد.</string>
+    <string name="picker_empty_sms">فرستنده‌ای در صندوق پیامک پیدا نشد.</string>
+    <string name="picker_no_match">موردی پیدا نشد. می‌توانید خودتان تایپ و اضافه کنید.</string>
+    <string name="picker_perm_needed">برای نمایش این فهرست دسترسی لازم است. برای تلاش دوباره همین‌جا را لمس کنید.</string>
+    <string name="picker_add_manual">افزودن «%1$s»</string>
+    <string name="picker_use_manual">استفاده از «%1$s»</string>
+    <string name="picker_manual_sub">ورود دستی</string>
+    <string name="picker_done_count">تأیید (%1$d)</string>
+
+    <string name="perm_contacts_title">دسترسی به مخاطبین</string>
+    <string name="perm_contacts_message">برای اینکه بتوانید شماره را از مخاطبین انتخاب کنید و هنگام تایپ پیشنهاد ببینید، برنامه نام و شماره‌ی مخاطبین را می‌خواند.\n\nاین اطلاعات فقط روی صفحه نمایش داده می‌شود؛ ذخیره یا ارسال نمی‌شود.</string>
+    <string name="perm_sms_title">دسترسی به صندوق پیامک</string>
+    <string name="perm_sms_message">برای اینکه بتوانید فرستنده‌ها (مثل DigiKala یا شماره‌های بانک) را از پیامک‌های قبلی انتخاب کنید، برنامه فقط نام یا شماره‌ی فرستنده‌ی پیامک‌های صندوق ورودی را می‌خواند.\n\nمتن پیامک‌ها خوانده و ذخیره نمی‌شود، و چیزی از گوشی خارج نمی‌شود.</string>
+    <string name="perm_denied_optional">دسترسی داده نشد؛ همچنان می‌توانید دستی تایپ کنید.</string>
+    <string name="perm_optional_settings_msg">برای استفاده از این امکان، دسترسی را از تنظیمات برنامه روشن کنید. بدون آن همچنان می‌توانید دستی تایپ کنید.</string>
+
+    <!-- حریم خصوصی / درباره -->
+    <string name="privacy_title">حریم خصوصی</string>
+    <string name="privacy_text">«انتقال پیامک» پیامک‌های دریافتی گوشی شما را، طبق تنظیماتی که خودتان تعیین می‌کنید، به یک شماره‌ی دلخواه پیامک می‌کند.\n\nچه داده‌ای پردازش می‌شود؟\nمتن و شماره‌ی فرستنده‌ی پیامک‌های دریافتی فقط در لحظه‌ی دریافت و فقط برای ساختن پیامِ ارسالی استفاده می‌شود.\n\nچه چیزی ذخیره می‌شود؟\nفقط تنظیمات برنامه و گزارش ارسال‌ها (فرستنده، زمان و وضعیت). متن پیامک‌ها هیچ‌جا ذخیره نمی‌شود.\n\nآیا داده‌ای از گوشی خارج می‌شود؟\nاینترنت فقط برای بررسی نسخه‌ی جدید برنامه استفاده می‌شود: یک فایل کوچک از سرور خوانده می‌شود و هیچ اطلاعاتی از گوشی یا پیامک‌های شما ارسال نمی‌شود. ابزار تبلیغاتی یا آماری هم وجود ندارد. تنها مقصد پیامک‌ها، شماره‌ای است که خودتان وارد می‌کنید.\n\nمخاطبین و فرستنده‌های پیامک\nاگر از «انتخاب از مخاطبین» یا «از پیامک‌ها» استفاده کنید، برنامه فقط برای نمایش فهرست و پیشنهاد، نام و شماره‌ی مخاطبین و نام/شماره‌ی فرستنده‌ی پیامک‌های صندوق را می‌خواند. متن پیامک‌های صندوق خوانده نمی‌شود و این فهرست‌ها ذخیره نمی‌شوند. این دسترسی‌ها اختیاری‌اند.\n\nمسئولیت شما\nپیامک‌ها ممکن است شامل کد تأیید یا اطلاعات حساس باشند. فقط به شماره‌ای منتقل کنید که به آن اطمینان دارید و فقط روی سیم‌کارت و گوشی خودتان استفاده کنید. هزینه‌ی ارسال طبق تعرفه‌ی اپراتور شما محاسبه می‌شود.\n\nحذف اطلاعات\nبا حذف برنامه یا پاک‌کردن داده‌های آن، همه‌ی اطلاعات برنامه از بین می‌رود.</string>
+    <string name="about_text">انتقال پیامک\nنسخه‌ی %1$s\n\nفونت: وزیرمتن (مجوز OFL)</string>
+
+    <!-- منو و تنظیمات -->
+    <string name="menu_privacy">حریم خصوصی</string>
+    <string name="menu_about">درباره برنامه</string>
+    <string name="settings_title">تنظیمات</string>
+    <string name="section_theme">حالت نمایش</string>
+    <string name="theme_hint">در حالت خودکار، از ۶ صبح تا ۷ عصر تم روشن و بقیه‌ی ساعت‌ها تاریک است. می‌توانید دستی هم انتخاب کنید.</string>
+    <string name="theme_auto">خودکار</string>
+    <string name="theme_light">روشن</string>
+    <string name="theme_dark">تاریک</string>
+    <string name="battery_ok">بهینه‌سازی باتری برای برنامه خاموش است.</string>
+    <string name="battery_not_ok">بهینه‌سازی باتری روشن است؛ ممکن است سیستم برنامه را متوقف کند.</string>
+    <string name="log_row_hint">نتیجه‌ی ارسال‌ها و خطاهای ارسال</string>
+
+    <!-- وضعیت کلی -->
+    <string name="status_on">فعال · %1$d قانون فعال</string>
+    <string name="status_no_active">فعال · هیچ قانون فعالی وجود ندارد</string>
+    <string name="section_rules">قانون‌های انتقال</string>
+    <string name="rules_empty">هنوز قانونی نساخته‌اید. هر قانون مشخص می‌کند پیامک چه فرستنده‌هایی به چه شماره‌هایی منتقل شود.</string>
+    <string name="rules_master_off_hint">ارسال خودکار خاموش است. برای دیدن و مدیریت قانون‌ها آن را روشن کنید.</string>
+    <string name="rule_add">افزودن قانون جدید</string>
+    <string name="rule_default_name">قانون %1$d</string>
+    <string name="sum_all_senders">همه‌ی فرستنده‌ها</string>
+    <string name="sum_n_senders">%1$d فرستنده‌ی مشخص</string>
+    <string name="sum_from">از: %1$s</string>
+    <string name="sum_to">به (%1$d): %2$s</string>
+    <string name="sum_more"> و %1$d شماره‌ی دیگر</string>
+    <string name="sum_sims">دریافت: %1$s · ارسال: %2$s</string>
+
+    <!-- ویرایش قانون -->
+    <string name="rule_new">قانون جدید</string>
+    <string name="rule_edit">ویرایش قانون</string>
+    <string name="rule_delete">حذف قانون</string>
+    <string name="rule_delete_confirm">این قانون حذف شود؟</string>
+    <string name="rule_saved">ذخیره شد</string>
+    <string name="btn_save">ذخیره</string>
+    <string name="section_info">۱. مشخصات قانون</string>
+    <string name="hint_rule_name">نام قانون (اختیاری)</string>
+    <string name="rule_enabled_title">قانون فعال باشد</string>
+    <string name="rule_status_on">فعال</string>
+    <string name="rule_status_off">غیرفعال؛ بخش‌های زیر خاموش‌اند</string>
+    <string name="section_which">۲. کدام پیامک‌ها؟</string>
+    <string name="section_targets">۳. به چه کسانی ارسال شود؟</string>
+    <string name="hint_targets">شماره‌های مقصد</string>
+    <string name="helper_targets">یک یا چند شماره را با ویرگول یا خط جدید جدا کنید. تایپ کنید تا پیشنهاد بیاید، یا از دکمه‌ی زیر چند مخاطب انتخاب کنید.</string>
+    <string name="unsaved_title">تغییرات ذخیره نشده</string>
+    <string name="unsaved_msg">تغییرات شما ذخیره نشده است. خارج می‌شوید؟</string>
+    <string name="unsaved_discard">خروج بدون ذخیره</string>
+    <string name="unsaved_keep">ادامه ویرایش</string>
+
+    <!-- خطاها -->
+    <string name="error_title">خطا</string>
+    <string name="err_in_section">[%1$s] %2$s</string>
+    <string name="err_senders_empty">«فقط فرستنده‌های مشخص» انتخاب شده ولی لیست فرستنده‌ها خالی است. فرستنده اضافه کنید یا «همه» را انتخاب کنید.</string>
+    <string name="err_targets_empty">حداقل یک شماره‌ی مقصد وارد کنید.</string>
+    <string name="err_target_invalid">شماره‌ی «%1$s» نامعتبر است؛ باید ۳ تا ۱۵ رقم باشد (با + اختیاری در ابتدا) و نباید حرف داشته باشد.</string>
+    <string name="err_target_dup">شماره‌ی «%1$s» تکراری است.</string>
+    <string name="err_target_is_sender">شماره‌ی «%1$s» هم در فرستنده‌ها و هم در مقصدها است؛ پیام مقصد هرگز دوباره به خودش ارسال نمی‌شود.</string>
+    <string name="err_template_empty">قالب پیام خالی است.</string>
+    <string name="err_template_no_body">قالب باید حتماً شامل {body} (متن پیام) باشد.</string>
+    <string name="err_template_unknown">متغیر ناشناخته‌ی %1$s در قالب. متغیرهای مجاز: {sender} {body} {sim} {time} {date}</string>
+    <string name="err_no_rules">هیچ قانونی تعریف نشده است. ابتدا یک قانون بسازید.</string>
+    <string name="err_no_active_rule">همه‌ی قانون‌ها غیرفعال‌اند. حداقل یک قانون را فعال کنید.</string>
+    <string name="err_save_failed">ذخیره‌سازی روی حافظه‌ی گوشی انجام نشد. دوباره تلاش کنید.</string>
+    <string name="err_unexpected">خطای غیرمنتظره: %1$s</string>
+    <string name="err_test_failed">ارسال آزمایشی به هیچ مقصدی آغاز نشد. جزئیات در «گزارش ارسال‌ها» است.</string>
+    <string name="err_render">ساخت متن پیام ناموفق بود: %1$s</string>
+
+    <!-- گزارش -->
+    <string name="log_sent_to">ارسال شد به %1$s · %2$s</string>
+    <string name="log_fail_to">%1$s · به %2$s · %3$s</string>
+    <string name="menu_label">منو</string>
+    <string name="menu_settings_hint">حالت نمایش و پایداری در پس‌زمینه</string>
+    <string name="menu_privacy_hint">برنامه چه داده‌ای را پردازش می‌کند</string>
+    <string name="menu_about_hint">نسخه و اطلاعات برنامه</string>
+
+    <!-- روشن/خاموش‌شدن خودکار -->
+    <string name="auto_off_no_rules">هیچ قانونی نمانده؛ ارسال خودکار خاموش شد.</string>
+    <string name="rules_more">نمایش قانون‌های بیشتر (%1$d)</string>
+    <string name="log_more">نمایش موارد بیشتر (%1$d)</string>
+    <string name="rule_status_master_off">ارسال خودکار خاموش است؛ همه‌ی قانون‌ها غیرفعال‌اند</string>
+    <string name="err_first_rule_enabled">برای روشن‌شدن ارسال خودکار، این قانون باید فعال باشد. کلید «قانون فعال باشد» را روشن کنید.</string>
+
+    <!-- دسترسی‌های ابتدای برنامه -->
+    <string name="perm_startup_title">قبل از شروع، چند دسترسی لازم است</string>
+    <string name="perm_startup_message">برای اینکه برنامه درست کار کند و بعداً مزاحم نشود، همین حالا این دسترسی‌ها را یک‌جا می‌گیریم:\n\n• دریافت پیامک: تا بفهمد پیامک جدیدی رسیده است.\n• ارسال پیامک: تا پیامک را به شماره‌ی مقصدی که خودتان تعیین کرده‌اید بفرستد (طبق تعرفه‌ی اپراتور ممکن است هزینه داشته باشد).\n• وضعیت تلفن: تا سیم ۱ و سیم ۲ را از هم تشخیص دهد.\n• مخاطبین (اختیاری): تا بتوانید شماره‌ی مقصد را از مخاطبین انتخاب کنید.\n• فرستنده‌ی پیامک‌های صندوق (اختیاری): تا فرستنده‌ها را پیشنهاد دهد؛ متن پیامک‌ها خوانده نمی‌شود.\n• اعلان‌ها: تا خبر بروزرسانی و غیرفعال‌شدن برنامه را به شما نشان دهد.\n\nبعد از زدن «ادامه»، سیستم برای هر مورد از شما اجازه می‌گیرد.</string>
+    <string name="perm_startup_continue">ادامه</string>
+    <string name="splash_credit">طراحی شده توسط Mr.PC</string>
+
+    <!-- بروزرسانی اجباری -->
+    <string name="upd_title">بروزرسانی ضروری</string>
+    <string name="upd_subtitle">این نسخه دیگر پشتیبانی نمی‌شود و تا نصب نسخه‌ی جدید کار نمی‌کند.</string>
+    <string name="upd_ver_old">نسخه‌ی شما: %1$s</string>
+    <string name="upd_ver_new">نسخه‌ی جدید: %1$s</string>
+    <string name="upd_why">چرا باید بروزرسانی کنید؟</string>
+    <string name="upd_changes">در نسخه‌ی جدید چه چیزهایی اضافه یا درست شده؟</string>
+    <string name="upd_default_reason">برای ادامه‌ی کار، پایداری و امنیت برنامه باید نسخه‌ی جدید را نصب کنید.</string>
+    <string name="upd_note">تا زمانی که برنامه را بروزرسانی نکنید، ارسال خودکار و همه‌ی قانون‌ها غیرفعال می‌مانند. بعد از بروزرسانی، ارسال خودکار را دوباره روشن کنید.</string>
+    <string name="upd_no_link">لینک دریافت نسخه‌ی جدید مشخص نشده است. برنامه را از همان فروشگاه یا منبعی که نصب کرده‌اید بروزرسانی کنید.</string>
+    <string name="upd_button">دریافت نسخه‌ی جدید</string>
+    <string name="upd_exit">خروج از برنامه</string>
+    <string name="upd_no_browser">برنامه‌ای برای باز کردن لینک پیدا نشد.</string>
+    <string name="upd_online_title">اتصال به اینترنت لازم است</string>
+    <string name="upd_online_msg">مدت زیادی از آخرین بررسی نسخه‌ی برنامه گذشته است.</string>
+    <string name="upd_online_note">برای ادامه، گوشی را به اینترنت وصل کنید و «تلاش دوباره» را بزنید. اینترنت فقط برای بررسی نسخه استفاده می‌شود.</string>
+    <string name="upd_retry">تلاش دوباره</string>
+    <string name="upd_checking">در حال بررسی…</string>
+    <string name="upd_still_offline">هنوز اتصال برقرار نشد.</string>
+
+    <!-- اعلان‌ها -->
+    <string name="ch_disabled">غیرفعال‌شدن برنامه</string>
+    <string name="ch_news">تازه‌های نسخه‌ی جدید</string>
+    <string name="notif_disabled_title">ارسال خودکار غیرفعال شد</string>
+    <string name="notif_disabled_text">نسخه‌ی %1$s منتشر شده و این نسخه دیگر کار نمی‌کند.</string>
+    <string name="notif_disabled_big">نسخه‌ی جدید %1$s منتشر شده است و نسخه‌ی فعلی دیگر کار نمی‌کند؛ به همین دلیل ارسال خودکار و همه‌ی قانون‌ها غیرفعال شدند.\n\nدلیل بروزرسانی: %2$s\n\nبرای فعال‌سازی دوباره، برنامه را بروزرسانی کنید.</string>
+    <string name="notif_news_title">در نسخه‌ی %1$s چه چیزهایی اضافه شده؟</string>
+    <string name="notif_news_empty">برای دیدن جزئیات نسخه‌ی جدید، اعلان را لمس کنید.</string>
+</resources>
